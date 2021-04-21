@@ -1,0 +1,32 @@
+{
+  "name": "single-spa-demo",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000s\u0000i\u0000n\u0000g\u0000l\u0000e\u0000-\u0000s\u0000p\u0000a\u0000-\u0000d\u0000e\u0000m\u0000o\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm run install:react & npm run install:vue & npm run install:main",
+    "install:react": "cd ./packages/app-react && npm install",
+    "install:vue": "cd ./packages/app-vue && npm install",
+    "install:main": "cd ./packages/main && npm install",
+    "start": "npm run dev",
+    "dev": "npm run dev:react & npm run dev:vue & npm run dev:main",
+    "dev:react": "cd ./packages/app-react && npm start",
+    "dev:vue": "cd ./packages/app-vue && npm run serve",
+    "dev:main": "cd ./packages/main && npm start",
+    "build": "npm run build:react & npm run build:vue & npm run build:main",
+    "build:react": "cd ./packages/app-react && npm run build",
+    "build:vue": "cd ./packages/app-vue && npm run build",
+    "build:main": "cd ./packages/main && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imdwpeng/single-spa-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imdwpeng/single-spa-demo/issues"
+  },
+  "homepage": "https://github.com/imdwpeng/single-spa-demo#readme"
+}
